@@ -21,8 +21,8 @@ This repository contains a set of customizable shell scripts, functions, alias a
 * `aliases`: Alias to common linux commands
 * `PS1 prompt`: A customized PS1 (prompt string 1) used to customize the appearance of the prompt, which includes information such as the username, hostname, and current working directory and git status
 * `History enhancement and auto complete`: History enchancement like 
-  `HISTCONTROL` environment variable  used to control how the command history is handled.
-  `HISTSIZE and HISTFILESIZE`:Used to increase the number of commands stored in the history list and history file. Setting these variables to -1 allows unlimited history.
+ * `HISTCONTROL` environment variable  used to control how the command history is handled.
+ * `HISTSIZE and HISTFILESIZE`:Used to increase the number of commands stored in the history list and history file. Setting these variables to -1 allows unlimited history.
   
 **Installation**
 
@@ -115,3 +115,31 @@ remember the color intensity can be increased to change the colors. [Click here]
 * `alias i='sudo apt install'`: Install packages on a Debian-based system.
 
 After redirecting the aliases to ~/.zsh or ~/bashrc `source ~/.bashrc` for bash or `source ~/.zshrc` for Zsh to apply the changes.
+
+# About Autocomplete and History enhancement
+ * For `Zsh`, the compinit function is used to initialize the completion system. The autoload -Uz compinit line loads the compinit function, and the compinit line initializes the completion system.
+```bash
+   # Enable autocomplete for aliases and functions
+autoload -Uz compinit
+compinit
+```
+
+* For `Bash`, the bash_completion script is used to enable completion for commands and aliases. The source /usr/share/bash-completion/bash_completion line loads the bash_completion script.
+  
+```bash
+# Enable autocomplete for aliases and functions
+source /usr/share/bash-completion/bash_completion
+```
+* HISTSIZE=1000 means that the bash history list will store the last 1000 commands.
+* HISTFILESIZE means that the bash history file will store up to 2000 lines of commands.
+* HISTCONTROL=ignoreboth Ignore duplicate commands and commands that start with a space.
+Then run
+
+```bash
+source ~/.bashrc
+```
+
+```bash
+source ~/.zshrc
+```
+ to apply the changes.
