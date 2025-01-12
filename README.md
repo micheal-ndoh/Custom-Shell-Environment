@@ -92,7 +92,7 @@ remember the color intensity can be increased to change the colors. [Click here]
 ### Git Aliases
 
 * `alias gs='git status'`: Quickly check the status of your Git repository.
-* `alias gc='git commit -m'`: Commit changes with a message. Note that you'll need to provide the commit message after running this alias, e.g., `gc "message"`.
+* `alias gc='git commit -m'`: Commit changes with a message. Note that you will need to provide the commit message after running this alias, e.g `gc "message"`.
 * `alias gp='git push'`: Push changes to a remote repository.
 * `alias gl='git log'`: View the commit history.
 * `alias gb='git branch'`: List all branches in the repository.
