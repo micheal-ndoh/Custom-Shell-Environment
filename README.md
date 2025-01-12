@@ -43,13 +43,14 @@ cat search.sh >> ~/.zshrc
 ```
 
 To apply the changes, source the ~/.bashrc or ~/.zshrc file:
+```bash
 source ~/.bashrc
-
+```
 
 
 **Contributor**
-[LELE MAXWELL](https://github.com/micheal-ndoh/Custom-Shell-Environment/blob/main/README.md)
-[MICHEAL NDOH](https://github.com/micheal-ndoh/Custom-Shell-Environment/blob/main/README.md).
+* [LELE MAXWELL](https://github.com/lele-maxwell)
+* [MICHEAL NDOH](https://github.com/micheal-ndoh)
 
 **README**
 
@@ -62,12 +63,12 @@ https://github.com/micheal-ndoh/Custom-Shell-Environment.git
 # About the Search Function
 A bash function to search for files on the entire system in a case-insensitive manner and count the lines in each file.
 
-## Description
+**Description**
 The `search` function is a bash function that searches for files on the entire system in a case-insensitive manner and counts the lines in each file. It uses the `find` command to search for files and the `wc` command to count the lines.
 
 
-## Usage
-Here's how to use `search` function, simply call it with the filename you want to search for as an argument like this:
+**Usage**
+Here's how to use `search` function, simply call it with the file name you want to search for as an argument like this:
 ```bash
 search filename
 ```
