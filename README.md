@@ -60,7 +60,8 @@ For more information about this repository, including detailed instructions and 
 ```shell
 https://github.com/micheal-ndoh/Custom-Shell-Environment.git
 ```
-# About the Search Function
+
+ # About the Search Function
 A bash function to search for files on the entire system in a case-insensitive manner and count the lines in each file.
 
 **Description**
@@ -72,4 +73,45 @@ Here's how to use `search` function, simply call it with the file name you want 
 ```bash
 search filename
 ```
-replace file name with the  actual file name you are looking for and wait for result.
+>replace file name with the  actual file name you are looking for and wait for result.
+# About Prompt string 1(PS1)
+Use the PS1 to Display username, hostname, current directory, and Git branch, with diffenet colors when the terminal is launched
+For Zsh
+```bash
+cat PS1.sh > ~/.zshrc
+```
+For Bash 
+```bash
+cat PS1.sh > ~/.bashrc
+```
+remember the color intensity can be increased to change the colors. [Click here](https://linuxconfig.org/bash-prompt-basics) to know more about the prompt and how to customise to reach your desired needs.
+
+# About Aliasses
+## Git and System Administration Aliases
+
+### Git Aliases
+
+* `alias gs='git status'`: Quickly check the status of your Git repository.
+* `alias gc='git commit -m'`: Commit changes with a message. Note that you'll need to provide the commit message after running this alias, e.g., `gc "message"`.
+* `alias gp='git push'`: Push changes to a remote repository.
+* `alias gl='git log'`: View the commit history.
+* `alias gb='git branch'`: List all branches in the repository.
+* 
+
+### VSCode Editor Alias
+
+* `alias c='code'`: Open the VSCode editor. You can use this alias to open a file or directory in VSCode, e.g., `c project`.
+
+### File System Aliases
+
+* `alias ls='ls -lh'`: List files and directories in a human-readable format. The `-lh` option displays file sizes in a readable format and sorts the output by file type.
+* `alias tree='tree -a'`: Display a tree-like representation of the directory structure. The `-a` option includes hidden files and directories in the output.
+
+### System Administration Aliases
+
+* `alias r='sudo reboot'`: Reboot the system with superuser privileges.
+* `alias s='sudo shutdown'`: Shut down the system with superuser privileges.
+* `alias u='sudo apt update'`: Update the package list on a Debian-based system.
+* `alias i='sudo apt install'`: Install packages on a Debian-based system.
+
+After redirecting the aliases to ~/.zsh or ~/bashrc `source ~/.bashrc` for bash or `source ~/.zshrc` for Zsh to apply the changes.
