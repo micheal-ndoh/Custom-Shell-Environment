@@ -48,8 +48,8 @@ source ~/.bashrc
 
 
 **Contributor**
-*LELE MAXWELL
-*MICHEAL NDOH
+[LELE MAXWELL](https://github.com/micheal-ndoh/Custom-Shell-Environment/blob/main/README.md)
+[MICHEAL NDOH](https://github.com/micheal-ndoh/Custom-Shell-Environment/blob/main/README.md).
 
 **README**
 
