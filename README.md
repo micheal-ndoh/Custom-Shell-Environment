@@ -142,4 +142,4 @@ source ~/.bashrc
 ```bash
 source ~/.zshrc
 ```
- to apply the changes.
+ to apply the changes
