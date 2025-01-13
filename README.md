@@ -13,7 +13,8 @@ This repository contains a set of customizable shell scripts, functions, alias a
 * Enhanced command-line completion and suggestion features
 * Improved file searching capabilities
 * Additional shell functions for tasks such as file management
-* 
+
+  
 
 **Contents**
 
@@ -142,4 +143,17 @@ source ~/.bashrc
 ```bash
 source ~/.zshrc
 ```
- to apply the changes
+ to apply the changes.
+ 
+ **Contributors**
+* [LELE MAXWELL](https://github.com/lele-maxwell)
+* [MICHEAL NDOH](https://github.com/micheal-ndoh)
+
+**README**
+
+For more information about this repository, including detailed instructions and examples, please see the [README file](https://github.com/micheal-ndoh/Custom-Shell-Environment/blob/main/README.md).
+
+**Repository Link**
+```shell
+https://github.com/micheal-ndoh/Custom-Shell-Environment.git
+```
