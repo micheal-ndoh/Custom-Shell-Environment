@@ -1,4 +1,4 @@
-echo "
+
    plugins=(
   git
   zsh-autosuggestions
@@ -11,4 +11,4 @@ source $ZSH/oh-my-zsh.sh
 
  # Enable autocomplete for aliases and functions
 autoload -Uz compinit
-compinit " >> ~/.bashrc
+compinit 
