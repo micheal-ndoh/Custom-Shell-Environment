@@ -94,6 +94,12 @@ For the welcome Function
   figlet "WELCOME"
    cowsay -f turtle  "....YOU CAN DO IT.... " | lolcat
  ```
+For fox function
+```bash
+fox() { firefox \"https://www.google.com/search?q=\$*\" & }
+```
+For welcome function
+```bash
 ## mock files
 1. mock_file are present for tests
 2. try the search function with
