@@ -1,4 +1,4 @@
-echo "
+
  # Git aliases
 alias gs='git status'
 alias gc='git commit -m'
@@ -20,4 +20,3 @@ alias s='sudo shutdown'
 alias u='sudo apt update'
 alias i='sudo apt install'
 
-" >> ~/.bashrc
