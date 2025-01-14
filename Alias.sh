@@ -18,3 +18,7 @@ alias r='sudo reboot'
 alias s='sudo shutdown'
 alias u='sudo apt update'
 alias i='sudo apt install'
+# docker aliases 
+alias docker="multipass exec  -- sudo /snap/bin/docker"
+alias docker-compose="multipass exec docker -- /snap/bin/docker-compose"
+
