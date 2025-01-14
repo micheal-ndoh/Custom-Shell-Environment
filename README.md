@@ -57,8 +57,43 @@ then do
 ```bash
 nano ~/.bashrc
 ```
-copy the following and paste to .bashrc 
+copy the search function and paste to .bashrc 
 
+```bash
+# Function to search for files on the entire system in a case-insensitive manner and count lines in each file
+search() {
+    if [ "$#" -ne 1 ]; then
+        echo "Usage: search filename"
+        return 1
+    fi
+
+    filename=$1
+
+    # Search for files on the entire system in a case-insensitive manner
+    find / -type f -iname "$filename" 2>/dev/null | while read file_path; do
+        echo "File: $file_path"
+        # Count the lines in the file
+        line_count=$(wc -l < "$file_path")
+        echo "The file has $line_count lines."
+        echo # Empty line for better readability
+    done
+}
+```
+For the now function copy and paste
+```bash
+now(){ 
+watch -n1 "date '+%T' | figlet -f script -k"
+}
+```
+For the PS1
+```bash
+export PS1='\[\e[32m\]\u@\h\[\e[00m\]:\[\e[34m\]\w\[\e[00m\] \[\e[91m\]\$(git branch --show-current 2>/dev/null)\[\e[00m\] \$ '
+```
+For the welcome Function
+```bash
+  figlet "WELCOME"
+   cowsay -f turtle  "....YOU CAN DO IT.... " | lolcat
+ ```
 ## mock files
 1. mock_file are present for tests
 2. try the search function with
@@ -66,6 +101,7 @@ copy the following and paste to .bashrc
    search task1.sh
 ```
 3. try the now function with
+
 ```bash
 now 
 ```
