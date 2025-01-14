@@ -19,7 +19,7 @@ multipass exec $INSTANCE_NAME -- bash -c "sudo apt update && sudo apt install -y
 
 echo "creating docker container"
 
-sudo docker build -t test-container .
+sudo docker build -t ubuntu
  
-sudo docker run -dit --name test --cpus=2 --memory=2g --memory-swap=2g test-container
-sudo docker exec -it test bash
+sudo docker run -dit --name ubuntu --cpus=2 --memory=2g --memory-swap=2g ubuntu
+sudo docker exec -it ubuntu bash
