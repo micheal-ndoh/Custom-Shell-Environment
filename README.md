@@ -88,8 +88,6 @@ search filename
 Replace file name with the  actual file name you are looking for and wait for result.
 # About Prompt string 1(PS1)
 Use the PS1 to Display username, hostname, current directory, and Git branch, with diffenet colors when the terminal is launched
-For Zsh
-```bash
 remember the color intensity can be increased to change the colors. [Click here](https://linuxconfig.org/bash-prompt-basics) to know more about the prompt and how to customise to reach your desired needs.
 
 # About Aliasses
@@ -141,7 +139,8 @@ source /usr/share/bash-completion/bash_completion
  
  # About fox.sh
  It's a function redirected to bashrc and zshrc that uses firefox browser with google search engine to open a new tab and search the internet
- ##Usage fox <what you want to search>
+ ## Usage 
+ fox (what you want to search)
 
 
  # About the now.sh
