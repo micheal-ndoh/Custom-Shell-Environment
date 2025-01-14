@@ -48,15 +48,18 @@ chmod +x install.sh
  ```bash
 ./install.sh
 ```
-5.After the installation of the necessary files source the .bashrc and .zshrc to save changes.
+5.After the installation of the necessary files  downloaded nano editor 
 For zsh
 ```bash
-source ~/.zshrc
+apt-get install nano
 ```
-For bash
+then do
 ```bash
-source ~/.bashrc
+nano ~/.bashrc
 ```
+copy the following and paste to .bashrc 
+
+## mock files
 1. mock_file are present for tests
 2. try the search function with
    ```bash
